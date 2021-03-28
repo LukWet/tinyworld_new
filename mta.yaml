@@ -1,6 +1,6 @@
 ID: tinyworld
 _schema-version: '2.1'
-version: 1.0.0
+version: 2.0.0
 modules:
   - name: tinydb
     type: hdb
@@ -13,7 +13,7 @@ modules:
     provides:
       - name: tinyjs_api
         properties:
-          url: '${default-url}'
+          url: ${default-url}
     requires:
       - name: tinydb
       - name: hdi_tinydb

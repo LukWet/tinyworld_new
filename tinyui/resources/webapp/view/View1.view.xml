@@ -4,19 +4,17 @@
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
-					<Table id="table"
-					items="{ 
-					path: '/euro'
-					}">
+					<Table id="table" items="{ path: '/euro' }">
 						<headerToolbar>
 							<OverflowToolbar>
 								<content>
 									<Title text="European Countries" level="H2"/>
-									<Label text="Sticky options:"/>
-									<CheckBox text="ColumnHeaders" select="onSelect"/>
-									<CheckBox text="HeaderToolbar" select="onSelect"/>
-									<CheckBox text="InfoToolbar" select="onSelect"/>
-									<ToggleButton id="toggleInfoToolbar" text="Hide/Show InfoToolbar" press="onToggleInfoToolbar"/>
+									<Input id="input" value="10" description="PC" width="100px" fieldWidth="60%" class="sapUiSmallMarginBottom"/>
+									<Button text="Default" press="onPress" ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+										<layoutData>
+											<FlexItemData growFactor="1"/>
+										</layoutData>
+									</Button>
 								</content>
 							</OverflowToolbar>
 						</headerToolbar>
